@@ -557,6 +557,71 @@ a {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form input {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 5rem;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  width: 100%;
+  padding: 0 2.7rem;
+  border: 1px #fff solid;
+  border-radius: 3.05rem;
+}
+.form input::placeholder {
+  color: #000;
+}
+.form input[type=checkbox] {
+  display: none;
+}
+.form input[type=checkbox]:checked + label::after {
+  opacity: 1;
+}
+.form label {
+  position: relative;
+  padding-left: 5.7rem;
+  cursor: pointer;
+}
+.form label::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/svg/checkbox.svg) no-repeat center;
+  background-size: contain;
+  top: -0.2rem;
+  left: 2.7rem;
+}
+.form label::after {
+  content: "";
+  position: absolute;
+  width: 1.4rem;
+  height: 1rem;
+  background: url(../images/svg/check-mark.svg) no-repeat center;
+  background-size: contain;
+  opacity: 0;
+  transition: all 0.1s linear;
+  left: 3.3rem;
+  top: 0.05rem;
+}
+.form label, .form label a {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: normal;
+  color: #5E5E5E;
+}
+.form label a {
+  transition: all 0.1s linear;
+}
+.form label a:hover {
+  color: #000;
+}
+
 .header {
   position: absolute;
   overflow-x: clip;
@@ -1715,4 +1780,86 @@ a {
   .footer__luxar {
     bottom: 1rem;
   }
+}
+
+.order-modal {
+  position: relative;
+  width: 68.6rem;
+  height: 58.3rem;
+  background: url(../images/order-modal-bg.jpg) no-repeat bottom center;
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.8980392157);
+  padding: 4.5rem 6rem;
+  border-radius: 2rem;
+}
+@media screen and (max-width: 576px) {
+  .order-modal {
+    padding: 2rem 1rem 1rem;
+  }
+}
+.order-modal::before, .order-modal::after {
+  content: "";
+  position: absolute;
+  height: 3.8rem;
+  transform: skew(40deg);
+}
+.order-modal::before {
+  width: 11.2rem;
+  background-color: rgba(248, 67, 56, 0.7607843137);
+  top: -2rem;
+  right: 0.5rem;
+}
+.order-modal::after {
+  width: 10.4rem;
+  background-color: rgba(255, 185, 0, 0.6588235294);
+  top: -0.5rem;
+  right: -5rem;
+}
+.order-modal__form::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 26rem;
+  background: linear-gradient(180deg, #E8E8E8 29.54%, rgba(115, 115, 115, 0) 100%);
+  border-radius: 0 0 2rem 2rem;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+}
+@media screen and (max-width: 576px) {
+  .order-modal__form::before {
+    height: 15rem;
+  }
+}
+.order-modal__form h2 {
+  font-weight: 700;
+  font-size: 9.5rem;
+  line-height: normal;
+  color: #383838;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .order-modal__form h2 {
+    text-align: center;
+    font-size: 7.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .order-modal__form h2 {
+    font-size: 5.5rem;
+  }
+}
+.order-modal__form > div {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.order-modal__form > div input {
+  width: calc(100% - 18rem);
+}
+.order-modal__form > div button {
+  line-height: 4.2rem;
+  width: 16.6rem;
+  padding-left: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,87 @@
+.order-modal {
+    position: relative;
+    width: 68.6rem;
+    height: 58.3rem;
+    background: url(../images/order-modal-bg.jpg) no-repeat bottom center;
+    background-size: contain;
+    background-color: #FFFFFFE5;
+    padding: 4.5rem 6rem;
+    border-radius: 2rem;
+
+    @media #{$sm} {
+        padding: 2rem 1rem 1rem;
+    }
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        height: 3.8rem;
+        transform: skew(40deg);
+    }
+
+    &::before {
+        width: 11.2rem;
+        background-color: #F84338C2;
+        top: -2rem;
+        right: 0.5rem;
+    }
+
+    &::after {
+        width: 10.4rem;
+        background-color: #FFB900A8;
+        top: -0.5rem;
+        right: -5rem;
+    }
+
+    &__form {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 26rem;
+            background: linear-gradient(180deg, #E8E8E8 29.54%, rgba(115, 115, 115, 0.00) 100%);
+            border-radius: 0 0 2rem 2rem;
+            z-index: -1;
+            left: 0;
+            bottom: 0;
+
+            @media #{$sm} {
+                height: 15rem;
+            }
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 9.5rem;
+            line-height: normal;
+            color: #383838;
+            margin: 0;
+
+            @media #{$md} {
+                text-align: center;
+                font-size: 7.5rem;
+            }
+
+            @media #{$sm} {
+                font-size: 5.5rem;
+            }
+        }
+
+        &>div {
+            display: flex;
+            align-items: center;
+            gap: 1.4rem;
+            margin-bottom: 1.5rem;
+
+            input {
+                width: calc(100% - 18rem);
+            }
+
+            button {
+                line-height: 4.2rem;
+                width: 16.6rem;
+                padding-left: 0;
+            }
+        }
+    }
+}
