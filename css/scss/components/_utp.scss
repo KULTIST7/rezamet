@@ -1,0 +1,52 @@
+.utp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.7rem;
+
+    @media #{$lg} {
+        gap: 1rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 23.5%;
+        background: rgba($color: $color-white, $alpha: 0.8);
+        padding: 1.8rem 0;
+        border-radius: 2rem;
+        
+        @media #{$lg} {
+            width: 48.5%;
+            padding: 2.1rem 0 0 0;
+        }
+
+        &__img {
+            height: 5.7rem;
+            margin-bottom: 2rem;
+
+            @media #{$lg} {
+                height: 5rem;
+            }
+
+            img {
+                width: auto;
+                height: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+
+        h3 {
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+            color: $color-black;
+            margin-bottom: 1rem;
+
+            @media #{$lg} {
+                font-size: 1.8rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+}

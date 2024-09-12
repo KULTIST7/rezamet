@@ -1,0 +1,37 @@
+.pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 34.6rem;
+    transform: translateY(-100%);
+    z-index: 3;
+
+    @media #{$lg} {
+        gap: 0;
+        justify-content: space-between;               
+    }
+
+    .swiper-pagination {
+        width: 33.4rem;
+        background-color: #D9D9D980;
+        transform: translate(-50%, -50%);
+        border-radius: 5rem;
+        top: 50%;
+        left: 50%;
+
+        @media #{$lg} {
+            width: calc(100% - 5.6rem);
+        }
+
+        span {
+            background-color: $color-primary;
+            border-radius: 5rem;
+        }
+    }
+
+    &__current, &__all {
+        font-weight: 500;
+        font-size: 1.8rem;
+        color: rgba($color: $color-white, $alpha: 0.5);
+    }
+}

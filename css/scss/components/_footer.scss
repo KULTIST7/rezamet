@@ -1,0 +1,174 @@
+.footer {
+    @media #{$lg} {
+        position: relative;           
+    }
+
+    &__top {
+        background-color: #FFFFFFE5;
+        padding: 3rem 0 1.7rem;
+
+        @media #{$lg} {
+            padding: 0 0 1.5rem;
+        }
+
+        &>div {
+            display: flex;
+            justify-content: space-between;
+
+            &>div {
+                display: flex;
+            }
+        }
+    }
+
+    &__logo {
+        display: flex;
+        width: 24.7rem;
+        height: max-content;
+        aspect-ratio: 247 / 67;
+        margin-right: 10rem;
+
+        @media #{$lg} {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        gap: 6rem;
+
+        @media #{$lg} {
+            flex-direction: column;
+            gap: 2.8rem;
+            z-index: 1;
+            margin-top: 0.4rem;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: normal;
+            color: $color-black;
+            margin-bottom: 0;
+
+            @media #{$lg} {
+                width: max-content;
+            }
+        }
+    }
+
+    .socials {
+        margin-top: 0.5rem;
+        margin-right: 4rem;
+
+        @media #{$lg} {
+            margin: 6rem 0 0 0;
+        }
+    }
+
+    .phone {
+        @media #{$lg} {
+            position: absolute;
+            top: 13.2rem;
+            left: 1.4rem;
+        }
+
+        &__order:hover {
+            color: $color-primary;
+        }
+    }
+
+    &__bottom {
+        position: relative;
+
+        @media #{$lg} {
+            position: initial;       
+        }
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            transform: skew(-40deg);
+        }
+
+        &::before {
+            width: 60.2rem;
+            height: 4.3rem;
+            background-color: #F84338C2;
+            top: 1.6rem;
+            left: 27rem;
+
+            @media #{$lg} {
+                width: 36rem;
+                top: 0;
+                left: -1.9rem;
+            }
+        }
+
+        &::after {
+            width: 52rem;
+            height: 7.5rem;
+            background-color: #FFB900A8;
+            top: 0;
+            left: -3.3rem;
+
+            @media #{$lg} {
+                width: 29.6rem;
+                height: 6.5rem;
+                top: -2.2rem;   
+            }
+        }
+
+        &>div {
+            position: relative;
+            padding: 2.5rem 0 4.5rem;
+
+            @media #{$lg} {
+                padding: 0;
+                margin-bottom: 8rem;
+            }
+        }
+    }
+
+    &__copyright {
+        max-width: 50.3rem;
+        margin-left: 64.8rem;
+        margin-bottom: 0;
+
+        @media #{$lg} {
+            display: none;
+        }
+
+        &, a {
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: normal;
+            color: $color-secondary;
+        }
+
+        a {
+            transition: all .1s linear;
+
+            &:hover {
+                color: $color-black;
+            }
+        }
+    }
+
+    &__luxar {
+        position: absolute;
+        right: 0;
+        bottom: 2.5rem;
+
+        @media #{$lg} {
+            bottom: 1rem;
+        }
+    }
+}

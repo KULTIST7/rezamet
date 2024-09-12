@@ -1,0 +1,131 @@
+html {
+    font-size: calc(100vw / 1920 * 10) !important;
+
+    @media #{$lg} {
+        font-size: calc(100vw / 768 * 10) !important;
+    }
+
+    @media #{$md} {
+        font-size: calc(100vw / 576 * 10) !important;
+    }
+
+    @media #{$sm} {
+        font-size: calc(100vw / 375 * 10) !important;
+    }
+}
+
+body {
+    font-family: $font-second;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: normal;
+    color: $color-text;
+    background-color: #F3F7F9;
+
+    &.body-noscroll {
+        overflow-y: hidden;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: normal;
+    color: $color-title;
+    margin-bottom: 3rem;
+
+    @media #{$lg} {
+        margin-bottom: 2.5rem;
+    }
+}
+
+h1, h2, h3, h4 {
+    font-family: $font-main;
+}
+
+h5, h6 {
+    font-family: $font-second;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+
+    @media #{$lg} {
+        font-size: 3.5rem;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    
+    @media #{$lg} {
+        font-size: 2.5rem;
+    }
+}
+
+h3 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+
+    @media #{$lg} {
+        font-size: 2rem;
+    }
+}
+
+h4 {
+    font-size: 2rem;
+    line-height: 2rem;
+
+    @media #{$lg} {
+        font-size: 1.8rem;
+    }
+}
+
+h5 {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+h6 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+    padding-top: 6rem;
+
+    @media #{$lg} {
+        padding-top: 5rem;
+    }
+}
+
+p {
+    font-family: $font-second;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: $color-text;
+    margin-bottom: 1.6rem;
+
+    @media #{$lg} {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 1.4rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    line-height: normal;
+}
+
+.section-box {
+    max-width: 140rem;
+    width: 100%;
+    margin: 0 auto;
+
+    @media #{$lg} {
+        width: calc(100% - 2.8rem);
+        margin: 0 1.4rem;
+    }
+}

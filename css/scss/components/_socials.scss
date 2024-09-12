@@ -1,0 +1,25 @@
+.socials {
+    display: flex;
+    gap: 1.8rem;
+    height: max-content;
+
+    @media #{$lg} {
+        gap: 1.3rem;
+    }
+
+    a {
+        height: max-content;
+        
+        &:hover {
+            i {
+                color: #596775;
+            }
+        }
+
+        i {
+            font-size: 2.1rem;
+            color: #59677580;
+            transition: all .1s linear;
+        }
+    }
+}

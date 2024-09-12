@@ -1,0 +1,42 @@
+.title {
+    position: relative;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: normal;
+    color: $color-title;
+    margin-bottom: 6rem;
+    z-index: 1;
+
+    @media #{$lg} {
+        font-size: 4rem;
+        margin-bottom: 4.5rem;
+    }
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 3.8rem;
+        height: 1.3rem;
+        transform: translateY(100%) skew(40deg);
+    }
+
+    &::before {
+        background-color: #F84338C2;
+        bottom: -0.3rem;
+        left: -0.8rem;
+
+        @media #{$lg} {
+            bottom: -0.8rem;
+        }
+    }
+
+    &::after {
+        background-color: #FFB900A8;
+        bottom: -0.8rem;
+        left: 1.3rem;
+
+        @media #{$lg} {
+            bottom: -1.3rem;
+        }
+    }
+}
