@@ -1,0 +1,32 @@
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    @media #{$lg} {
+        gap: 1rem;
+    }
+
+    @media #{$md} {
+        gap: 1.8rem;
+    }
+
+    a {
+        width: 32.35%;
+        height: max-content;
+        aspect-ratio: 453 / 231;
+
+        @media #{$md} {
+            width: 100%;
+            aspect-ratio: 347 / 177;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 2rem;
+        }
+    }
+}

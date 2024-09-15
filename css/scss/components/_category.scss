@@ -1,0 +1,13 @@
+.category {
+    margin-bottom: 6.3rem;
+
+    &>.detail-page {
+        &__content {
+            margin: 0;
+
+            &>div {
+                margin: 0;
+            }
+        }
+    }
+}

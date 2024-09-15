@@ -1,0 +1,66 @@
+.detail-page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15.5rem;
+
+    @media #{$lg} {
+        margin-bottom: 7.5rem;
+    }
+    
+    &__content {
+        margin-top: 4rem;
+        margin-bottom: 8.2rem;
+
+        @media #{$lg} {
+            margin-top: 0;
+            margin-bottom: 4rem;
+        }
+
+        &>div {
+            display: flex;
+            gap: 2.8rem;
+            margin-bottom: 2.2rem;
+
+            @media #{$lg} {
+                flex-direction: column;
+                gap: 4rem;
+                margin-bottom: 0;
+            }
+
+            img {
+                width: 32.8rem;
+                height: max-content;
+                aspect-ratio: 328 / 144;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 2rem;
+
+                @media #{$md} {
+                    width: 100%;
+                }
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: $color-text;
+            margin-bottom: 0;
+
+            b, span {
+                font-weight: 600;
+            }
+
+            span {
+                color: #B32425;
+            }
+        }
+
+        &>p {
+            @media #{$lg} {
+                display: none;
+            }
+        }
+    }
+}

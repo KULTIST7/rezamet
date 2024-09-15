@@ -2,11 +2,11 @@
     position: relative;
     background: url(../images/consultation-bg.jpg) no-repeat center;
     background-size: contain;
-    margin-bottom: 23.3rem;
+    margin-bottom: 9.3rem;
 
     @media #{$lg} {
         background: none;
-        margin-bottom: 10.8rem;
+        margin-bottom: 3.6rem;
     }
 
     &::before {
