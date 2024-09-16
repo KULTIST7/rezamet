@@ -1,0 +1,123 @@
+.delivery {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14.5rem;
+
+    @media #{$lg} {
+        margin-bottom: 13rem;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: $color-white;
+        padding: 4.4rem 6rem 3.6rem;
+        border-radius: 4rem;
+        margin-top: 4rem;
+        margin-bottom: 4.6rem;
+
+        @media #{$lg} {
+            padding: 0 1.4rem 2rem;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+            color: $color-text;
+            max-width: 40rem;
+            margin-bottom: 2.8rem;
+            
+            @media #{$lg} {
+                font-size: 3rem;
+                order: 2;
+                max-width: none;
+                margin-bottom: 3.2rem;
+            }
+
+            span {
+                color: $color-warning;
+
+                @media #{$lg} {
+                    font-size: 4.2rem;
+                }
+            }
+        }
+
+        .operating-mode {
+            @media #{$lg} {
+                order: 3;
+                margin-left: 1.4rem;
+            }
+        }
+
+        &>img {
+            position: absolute;
+            width: 83.8rem;
+            height: max-content;
+            object-fit: contain;
+            object-position: center;
+            pointer-events: none;
+            top: -15.2rem;
+            right: 10.6rem;
+
+            @media #{$lg} {
+                position: initial;
+                transform: translateY(-3.8rem);
+                margin-bottom: -3.8rem;        
+                order: 1;
+            }
+        }
+    }
+
+    &__methods {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.7rem;
+
+        @media #{$lg} {
+            gap: 2rem;
+        }
+    }
+
+    &__card {
+        width: 32.5%;
+        background-color: rgba($color: $color-white, $alpha: 0.5);
+        backdrop-filter: blur(0.25rem);
+        padding: 3.3rem 2.1rem 5.3rem 2.8rem;
+        border-radius: 2rem;
+
+        @media #{$lg} {
+            width: 100%;
+            padding: 2rem 2rem 2rem 1.4rem;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: normal;
+            color: $color-text;
+            margin-bottom: 1.2rem;
+
+            @media #{$lg} {
+                margin-bottom: 0.6rem;
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            color: $color-secondary;
+            margin-bottom: 0;
+
+            @media #{$lg} {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+            }
+        }
+    }
+}

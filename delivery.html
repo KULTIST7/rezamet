@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="images/svg/favicon.svg" rel="shortcut icon">
+    <link type="Image/x-icon" href="images/svg/favicon.svg" rel="icon">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="js/fancybox/fancybox.css">
+    <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+
+    <title>Резамет</title>
+</head>
+<body>
+    <header class="header">
+        <div class="section-box header__content">
+            <div class="header__top">
+                <button class="header__burger-btn">
+                    <span></span><span></span><span></span>
+                </button>
+                <a class="header__logo" href="/">
+                    <img src="images/svg/logo.svg" alt="" loading="lazy">
+                </a>
+                <div class="header__contacts">
+                    <div class="socials">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-viber"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-skype"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+73512113735" class="phone__tel">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (351) 211-37-35</span>
+                        </a>
+                        <a href="#" data-fancybox="" data-src="#order" class="phone__order">заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <ul class="menu">
+                    <li>
+                        <a href="#">О компании</a>
+                    </li>
+                    <li>
+                        <a class="drop-down-products-hover" href="#">Каталог продукции</a>
+                    </li>
+                    <li>
+                        <a class="drop-down-equipment-hover" href="#">Каталог оборудования</a>
+                    </li>
+                    <li>
+                        <a href="#">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#">Полезная информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Оплата</a>
+                    </li>
+                    <li>
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                    <div class="menu__more">
+                        <p>. . .</p>
+                        <ul class="menu-hidden"></ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="drop-down drop-down-products" style="display: none;">
+            <div class="section-box drop-down__content">
+                <ul class="drop-down__list">
+                    <li>
+                        <a class="active" id="product-1" href="#">Водосмешиваемые СОЖ</a>
+                    </li>
+                    <li>
+                        <a id="product-2" href="#">Масляные СОЖ</a>
+                    </li>
+                    <li>
+                        <a id="product-3" href="#">СОЖ для штамповки</a>
+                    </li>
+                    <li>
+                        <a id="product-4" href="#">СОЖ для микросмазывания</a>
+                    </li>
+                    <li>
+                        <a id="product-5" href="#">СОЖ для шлифования</a>
+                    </li>
+                    <li>
+                        <a id="product-6" href="#">Диэлектрические жидкости</a>
+                    </li>
+                    <li>
+                        <a id="product-7" href="#">Смазки для нарезания резьбы</a>
+                    </li>
+                </ul>
+                <div class="drop-down__items">
+                    <div id="product-1" class="drop-down__item active">
+                        <div class="drop-down__item__img">
+                            <img src="images/catalog-img-1.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3><span>Водосмешиваемые СОЖ</span> для металлообработки</h3>
+                        <p>Масло СОЖ (смазка, как его называют рабочие) используется в самых разных сферах производства. Средства предотвращают перегрев и деформацию поверхностей, одновременно снижая износ станка. У нас в компании Вы сможете подобрать интересующий Вас товар с доставкой по всей России. TECHLUBE GMBH представляет линейку готовых к использованию не водосмешиваемых масляных жидкостей. Такие СОЖ покупают металлообрабатывающие и машиностроительные предприятия. Продукция TECHLUBE GMBH соответствует строгим требованиям TRGS900.</p>
+                    </div>
+                    <div id="product-2" class="drop-down__item">
+                        <div class="drop-down__item__img">
+                            <img src="images/catalog-img-2.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3><span>Масляные СОЖ</span> для металлообработки</h3>
+                        <p>Масло СОЖ (смазка, как его называют рабочие) используется в самых разных сферах производства. Средства предотвращают перегрев и деформацию поверхностей, одновременно снижая износ станка. У нас в компании Вы сможете подобрать интересующий Вас товар с доставкой по всей России. TECHLUBE GMBH представляет линейку готовых к использованию не водосмешиваемых масляных жидкостей. Такие СОЖ покупают металлообрабатывающие и машиностроительные предприятия. Продукция TECHLUBE GMBH соответствует строгим требованиям TRGS900.</p>
+                    </div>
+                    <div id="product-3" class="drop-down__item">
+                        <div class="drop-down__item__img">
+                            <img src="images/catalog-img-3.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3><span>СОЖ</span> для штамповки</h3>
+                        <p>Масло СОЖ (смазка, как его называют рабочие) используется в самых разных сферах производства. Средства предотвращают перегрев и деформацию поверхностей, одновременно снижая износ станка. У нас в компании Вы сможете подобрать интересующий Вас товар с доставкой по всей России. TECHLUBE GMBH представляет линейку готовых к использованию не водосмешиваемых масляных жидкостей. Такие СОЖ покупают металлообрабатывающие и машиностроительные предприятия. Продукция TECHLUBE GMBH соответствует строгим требованиям TRGS900.</p>
+                    </div>
+                    <div id="product-4" class="drop-down__item">
+                        <div class="drop-down__item__img">
+                            <img src="images/catalog-img-4.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3><span>СОЖ</span> для микросмазывания</h3>
+                        <p>Масло СОЖ (смазка, как его называют рабочие) используется в самых разных сферах производства. Средства предотвращают перегрев и деформацию поверхностей, одновременно снижая износ станка. У нас в компании Вы сможете подобрать интересующий Вас товар с доставкой по всей России. TECHLUBE GMBH представляет линейку готовых к использованию не водосмешиваемых масляных жидкостей. Такие СОЖ покупают металлообрабатывающие и машиностроительные предприятия. Продукция TECHLUBE GMBH соответствует строгим требованиям TRGS900.</p>
+                    </div>
+                    <div id="product-5" class="drop-down__item">
+                        <div class="drop-down__item__img">
+                            <img src="images/catalog-img-5.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3><span>СОЖ</span> для шлифования</h3>
+                        <p>Масло СОЖ (смазка, как его называют рабочие) используется в самых разных сферах производства. Средства предотвращают перегрев и деформацию поверхностей, одновременно снижая износ станка. У нас в компании Вы сможете подобрать интересующий Вас товар с доставкой по всей России. TECHLUBE GMBH представляет линейку готовых к использованию не водосмешиваемых масляных жидкостей. Такие СОЖ покупают металлообрабатывающие и машиностроительные предприятия. Продукция TECHLUBE GMBH соответствует строгим требованиям TRGS900.</p>
+                    </div>
+                    <div id="product-6" class="drop-down__item">
+                        <div class="drop-down__item__img">
+                            <img src="images/catalog-img-6.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3>Диэлектрические жидкости</h3>
+                        <p>Масло СОЖ (смазка, как его называют рабочие) используется в самых разных сферах производства. Средства предотвращают перегрев и деформацию поверхностей, одновременно снижая износ станка. У нас в компании Вы сможете подобрать интересующий Вас товар с доставкой по всей России. TECHLUBE GMBH представляет линейку готовых к использованию не водосмешиваемых масляных жидкостей. Такие СОЖ покупают металлообрабатывающие и машиностроительные предприятия. Продукция TECHLUBE GMBH соответствует строгим требованиям TRGS900.</p>
+                    </div>
+                    <div id="product-7" class="drop-down__item">
+                        <div class="drop-down__item__img">
+                            <img src="images/catalog-img-7.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3>Смазки для нарезания резьбы</h3>
+                        <p>Масло СОЖ (смазка, как его называют рабочие) используется в самых разных сферах производства. Средства предотвращают перегрев и деформацию поверхностей, одновременно снижая износ станка. У нас в компании Вы сможете подобрать интересующий Вас товар с доставкой по всей России. TECHLUBE GMBH представляет линейку готовых к использованию не водосмешиваемых масляных жидкостей. Такие СОЖ покупают металлообрабатывающие и машиностроительные предприятия. Продукция TECHLUBE GMBH соответствует строгим требованиям TRGS900.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="drop-down drop-down-equipment" style="display: none;">
+            <div class="section-box drop-down__content">
+                <ul class="drop-down__list">
+                    <h3>Оборудование для контроля и ухода за СОЖ</h3>
+                    <li>
+                        <a class="active" id="equipment-1" href="#">Рефрактометр</a>
+                    </li>
+                    <li>
+                        <a id="equipment-2" href="#">Скиммер для очистки</a>
+                    </li>
+                    <li>
+                        <a id="equipment-3" href="#">Лента для скиммера</a>
+                    </li>
+                    <li>
+                        <a id="equipment-4" href="#">Смеситель</a>
+                    </li>
+                    <li>
+                        <a id="equipment-5" href="#">Пневмосистема</a>
+                    </li>
+                </ul>
+                <div class="drop-down__items">
+                    <div id="equipment-1" class="drop-down__item active">
+                        <div class="drop-down__item__img">
+                            <img src="images/drop-down-equipment-img-1.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3><span>Рефрактометр</span> для СОЖ</h3>
+                        <p>Масло СОЖ (смазка, как его называют рабочие) используется в самых разных сферах производства. Средства предотвращают перегрев и деформацию поверхностей, одновременно снижая износ станка. У нас в компании Вы сможете подобрать интересующий Вас товар с доставкой по всей России. TECHLUBE GMBH представляет линейку готовых к использованию не водосмешиваемых масляных жидкостей. Такие СОЖ покупают металлообрабатывающие и машиностроительные предприятия. Продукция TECHLUBE GMBH соответствует строгим требованиям TRGS900.</p>
+                    </div>
+                    <div id="equipment-2" class="drop-down__item">
+                        <div class="drop-down__item__img">
+                            <img src="images/drop-down-equipment-img-1.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3><span>Скиммер</span> для очистки</h3>
+                        <p>Масло СОЖ (смазка, как его называют рабочие) используется в самых разных сферах производства. Средства предотвращают перегрев и деформацию поверхностей, одновременно снижая износ станка. У нас в компании Вы сможете подобрать интересующий Вас товар с доставкой по всей России. TECHLUBE GMBH представляет линейку готовых к использованию не водосмешиваемых масляных жидкостей. Такие СОЖ покупают металлообрабатывающие и машиностроительные предприятия. Продукция TECHLUBE GMBH соответствует строгим требованиям TRGS900.</p>
+                    </div>
+                    <div id="equipment-3" class="drop-down__item">
+                        <div class="drop-down__item__img">
+                            <img src="images/drop-down-equipment-img-1.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3><span>Лента</span> для скиммера</h3>
+                        <p>Масло СОЖ (смазка, как его называют рабочие) используется в самых разных сферах производства. Средства предотвращают перегрев и деформацию поверхностей, одновременно снижая износ станка. У нас в компании Вы сможете подобрать интересующий Вас товар с доставкой по всей России. TECHLUBE GMBH представляет линейку готовых к использованию не водосмешиваемых масляных жидкостей. Такие СОЖ покупают металлообрабатывающие и машиностроительные предприятия. Продукция TECHLUBE GMBH соответствует строгим требованиям TRGS900.</p>
+                    </div>
+                    <div id="equipment-4" class="drop-down__item">
+                        <div class="drop-down__item__img">
+                            <img src="images/drop-down-equipment-img-1.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3><span>Смеситель</span> для СОЖ</h3>
+                        <p>Масло СОЖ (смазка, как его называют рабочие) используется в самых разных сферах производства. Средства предотвращают перегрев и деформацию поверхностей, одновременно снижая износ станка. У нас в компании Вы сможете подобрать интересующий Вас товар с доставкой по всей России. TECHLUBE GMBH представляет линейку готовых к использованию не водосмешиваемых масляных жидкостей. Такие СОЖ покупают металлообрабатывающие и машиностроительные предприятия. Продукция TECHLUBE GMBH соответствует строгим требованиям TRGS900.</p>
+                    </div>
+                    <div id="equipment-5" class="drop-down__item">
+                        <div class="drop-down__item__img">
+                            <img src="images/drop-down-equipment-img-1.jpg" alt="" loading="lazy">
+                        </div>
+                        <h3><span>Пневмосистема</span> для СОЖ</h3>
+                        <p>Масло СОЖ (смазка, как его называют рабочие) используется в самых разных сферах производства. Средства предотвращают перегрев и деформацию поверхностей, одновременно снижая износ станка. У нас в компании Вы сможете подобрать интересующий Вас товар с доставкой по всей России. TECHLUBE GMBH представляет линейку готовых к использованию не водосмешиваемых масляных жидкостей. Такие СОЖ покупают металлообрабатывающие и машиностроительные предприятия. Продукция TECHLUBE GMBH соответствует строгим требованиям TRGS900.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-fixed hidden">
+        <div class="section-box header-fixed__content">
+            <a class="header-fixed__logo" href="/">
+                <img src="images/svg/logo-short-version.svg" alt="" loading="lazy">
+            </a>
+            <ul class="menu">
+                <li>
+                    <a href="#">Каталог продукции</a>
+                </li>
+                <li>
+                    <a href="#">Каталог оборудования</a>
+                </li>
+                <li>
+                    <a href="#">Услуги</a>
+                </li>
+                <li>
+                    <a href="#">Оплата</a>
+                </li>
+                <li>
+                    <a href="#">Доставка</a>
+                </li>
+                <div class="menu__more">
+                    <p>. . .</p>
+                    <ul class="menu-hidden"></ul>
+                </div>
+            </ul>
+            <div class="phone">
+                <a href="tel:+73512113735" class="phone__tel">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+7 (351) 211-37-35</span>
+                </a>
+                <a href="#" data-fancybox="" data-src="#order" class="phone__order">заказать звонок</a>
+            </div>
+        </div>
+    </div>
+    <div class="burger">
+        <button class="burger__close"></button>
+        <ul class="menu">
+            <li>
+                <a href="#">О компании</a>
+            </li>
+            <li>
+                <a class="drop-down-products-hover" href="#">Каталог продукции</a>
+            </li>
+            <li>
+                <a class="drop-down-equipment-hover" href="#">Каталог оборудования</a>
+            </li>
+            <li>
+                <a href="#">Услуги</a>
+            </li>
+            <li>
+                <a href="#">Полезная информация</a>
+            </li>
+            <li>
+                <a href="#">Оплата</a>
+            </li>
+            <li>
+                <a href="#">Доставка</a>
+            </li>
+            <li>
+                <a href="#">Контакты</a>
+            </li>
+        </ul>
+        <div class="socials">
+            <a href="#" target="_blank">
+                <i class="fab fa-vk"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-viber"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-skype"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </div>
+        <div class="phone">
+            <a href="tel:+73512113735" class="phone__tel">
+                <i class="fas fa-phone-alt"></i>
+                <span>+7 (351) 211-37-35</span>
+            </a>
+            <a href="#" data-fancybox="" data-src="#order" class="phone__order">заказать звонок</a>
+        </div>
+    </div>
+    <main>
+        <div class="up up-invisible">
+            <a href="#" data-fancybox="" data-src="#order" class="up__tel">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+            <button href="#" class="up__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <path d="M1 15.5L7 9.5L13 15.5M1 7.5L7 1.5L13 7.5" stroke="#596775" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="inner-page">
+            <img src="images/inner-page-bg.jpg" alt="" loading="lazy">
+        </div>
+        <div class="breadcrumb">
+            <div class="section-box breadcrumb__content">
+                <div class="breadcrumb__item"><a href="/">Главная</a></div>
+                <div class="breadcrumb__item">&nbsp;>&nbsp;<p>Доставка</p></div>
+            </div>
+        </div>
+        <div class="section-box">
+            <section class="delivery">
+                <h1 class="title">Доставка</h1>
+                <div class="delivery__content">
+                    <h3><span>Бесплатная доставка</span> по городу при заказе от 5000₽</h3>
+                    <div class="operating-mode">
+                        <img src="images/svg/operating-mode.svg" alt="" loading="lazy">
+                        <div>
+                            <h3>Режим работы</h3>
+                            <p>Пн - Пт: с 8-00 до 17-00<br>Сб - Вс: выходные</p>
+                        </div>
+                    </div>
+                    <img src="images/delivery-img.png" alt="" loading="lazy">
+                </div>
+                <div class="delivery__methods">
+                    <div class="delivery__card">
+                        <h3>Самовывоз</h3>
+                        <p>г. Челябинск, ул. 2-я Потребительская, 26</p>
+                    </div>
+                    <div class="delivery__card">
+                        <h3>Транспортные компании</h3>
+                        <p>Бесплатный вывоз до терминала транспортной компании (Деловые линии, ЛУЧ, ПЭК, КИТ и прочие) при заказе от 5000₽</p>
+                    </div>
+                    <div class="delivery__card">
+                        <h3>Служба доставки резамет</h3>
+                        <p>Служба доставки ТК Вид работает по <br>г. Челябинску и Челябинской области.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="consultation">
+            <div class="consultation__content">
+                <div>
+                    <h2>Получить консультацию<br><span>по подбору</span></h2>
+                    <p>Получите ответы на Ваши вопросы и вместе с нашими специалистами найдите оптимальное решение Ваших задач</p>
+                    <a href="#" class="btn-primary">Задать вопрос</a>
+                </div>
+                <video class="consultation__content__bg" src="videos/consultation-video.mp4" muted autoplay loop></video>
+            </div>
+        </section>
+        <section class="map">
+            <img src="images/map-img.jpg" alt="" class="map__img" loading="lazy">
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="section-box">
+                <div>
+                    <a href="/" class="footer__logo">
+                        <img src="images/svg/logo-dark.svg" alt="" loading="lazy">
+                    </a>
+                    <div class="footer__contacts">
+                        <p>Адрес склада:<br>г. Челябинск, ул. Ленина, 59</p>
+                        <p>Тел.: +7 (351) 211-37-35<br>E-mail: info@rezamet.ru</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="socials">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-viber"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-skype"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+73512113735" class="phone__tel">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+7 (351) 211-37-35</span>
+                        </a>
+                        <a href="#" data-fancybox="" data-src="#order" class="phone__order">заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="section-box">
+                <p class="footer__copyright">
+                    <a href="#">Пользовательское соглашение.</a>
+                    <a href="#">Политика обработки персональных данных</a>
+                    Все права защищены © 2007-2024 ООО "Резамет"                    
+                </p>
+                <a class="footer__luxar" href="https://luxargroup.ru/" target="_blank">
+                    <img src="images/svg/logo-luxar.svg" alt="" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div id="order" class="order-modal" style="display: none;;">
+        <form class="form order-modal__form">
+            <h2>заказать звонок</h2>
+            <input type="text" name="name" placeholder="Ваше Имя">
+            <input type="tel" name="phone" placeholder="Телефон">
+            <div>
+                <input type="email" name="email" placeholder="Ваша почта">
+                <button class="btn-primary" type="submit">заказать</button>
+            </div>
+            <input type="checkbox" id="checkbox" checked>
+            <label class="checkbox" for="checkbox">Я ознакомлен с условиями <a href="#">Политики конфиденциальности</a> и принимаю их, также я выражаю своё согласие на <a href="#">обработку персональных данных</a>.<br>Я ознакомлен с условиями <a href="#">Пользовательского соглашения</a> и принимаю их</label>
+        </form>
+    </div>
+    <script src="js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery/jquery.inputmask.min.js"></script>
+    <script src="js/jquery/jquery.form.min.js"></script>
+    <script src="https://vk.com/js/api/videoplayer.js" defer></script>
+    <script src="js/fancybox/fancybox.umd.js"></script>
+    <script src="js/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/product-slider.js"></script>
+</body>
+</html>

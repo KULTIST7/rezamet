@@ -1,0 +1,93 @@
+.page-404 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 22.7rem;
+
+    @media #{$lg} {
+        margin-top: 5.5rem;
+        margin-bottom: 11.5rem;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 5rem;
+        color: $color-black;
+        margin-bottom: 34rem;
+
+        @media #{$lg} {
+            font-size: 4rem;
+        }
+    }
+
+    &__control {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-size: 2rem;
+            line-height: 5rem;
+            color: #202020;
+            margin-bottom: 0;
+
+            @media #{$lg} {
+                font-size: 1.8rem;
+            }
+        }
+
+        &>div {
+            display: flex;
+            gap: 2rem;
+
+            a {
+                position: relative;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 4.5rem;
+                text-align: center;
+                color: $color-white;
+                background-color: $color-secondary;
+                border-radius: 22.5rem;
+                width: 17.5rem;
+
+                @media #{$lg} {
+                    width: 16.5rem;
+                    line-height: 4.2rem;
+                }
+
+                &:first-child {
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 1.2rem;
+                        height: 1.1rem;
+                        background: url(../images/svg/btn-back-arrow.svg) no-repeat center;
+                        background-size: contain;
+                        transform: translateY(-50%);
+                        top: 50%;
+                        left: 2.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &>img {
+        position: absolute;
+        width: 65.2rem;
+        height: max-content;
+        object-fit: contain;
+        object-position: center;
+        transform: translateX(-50%);
+        z-index: -1;
+        top: 1.5rem;
+        left: 50%;
+        
+        @media #{$lg} {
+            width: 34.7rem;
+            top: 4.7rem;
+        }
+    }
+}
