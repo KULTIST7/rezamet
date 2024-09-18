@@ -44,6 +44,12 @@
             left: 0;
         }
 
+        &>div {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+        }
+
         p {
             font-family: $font-main;
             font-weight: 700;
@@ -62,6 +68,15 @@
 
             b {
                 color: #1A1A1A;
+            }
+        }
+
+        .socials {
+            gap: 2.4rem;
+
+            a i {
+                font-size: 2.8rem;
+                color: $color-secondary;
             }
         }
 
@@ -109,30 +124,46 @@
         &__content {
             display: flex;
             gap: 1rem;
-
-            ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
         }
 
-        &__keys {
-            li {
-                font-weight: 500;
-                font-size: 1.4rem;
-                line-height: 2.1rem;
-                text-align: right;
-                color: $color-secondary;
-            }
-        }
+        &__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
 
-        &__values {
             li {
                 font-weight: 500;
                 font-size: 1.6rem;
                 line-height: 2.1rem;
                 color: $color-black;
+                display: flex;
+                align-items: center;
+                gap: 0 1rem;
+
+                @media #{$lg} {
+                    flex-direction: column;
+                    align-items: start;
+                    margin-bottom: 1.8rem;
+                }
+
+                &:last-of-type {
+                    @media #{$lg} {
+                        margin-bottom: 0;
+                    }
+                }
+
+                span {
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                    line-height: 2.1rem;
+                    text-align: right;
+                    color: $color-secondary;
+                    min-width: 20rem;
+
+                    @media #{$lg} {
+                        min-width: 0;
+                    }
+                }
             }
         }
     }

@@ -3170,6 +3170,11 @@ a {
   top: 0;
   left: 0;
 }
+.contacts__card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
 .contacts__card p {
   font-family: "Bebas Neue", Arial, sans-serif;
   font-weight: 700;
@@ -3183,6 +3188,13 @@ a {
 }
 .contacts__card p b {
   color: #1A1A1A;
+}
+.contacts__card .socials {
+  gap: 2.4rem;
+}
+.contacts__card .socials a i {
+  font-size: 2.8rem;
+  color: #596775;
 }
 .contacts__card img {
   position: absolute;
@@ -3228,23 +3240,44 @@ a {
   display: flex;
   gap: 1rem;
 }
-.contacts__details__content ul {
+.contacts__details__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.contacts__details__keys li {
+.contacts__details__list li {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+}
+@media screen and (max-width: 992px) {
+  .contacts__details__list li {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 1.8rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contacts__details__list li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.contacts__details__list li span {
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 2.1rem;
   text-align: right;
   color: #596775;
+  min-width: 20rem;
 }
-.contacts__details__values li {
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2.1rem;
-  color: #000;
+@media screen and (max-width: 992px) {
+  .contacts__details__list li span {
+    min-width: 0;
+  }
 }
 
 .page-404 {
