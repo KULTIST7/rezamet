@@ -7,7 +7,7 @@
         height: 22rem;
     }
 
-    &:not(:has(+ .breadcrumb)) {
+    &:not(:has(+ .breadcrumbs)) {
         margin-bottom: 7rem;
 
         @media #{$lg} {

@@ -633,11 +633,11 @@ a {
     height: 22rem;
   }
 }
-.inner-page:not(:has(+ .breadcrumb)) {
+.inner-page:not(:has(+ .breadcrumbs)) {
   margin-bottom: 7rem;
 }
 @media screen and (max-width: 992px) {
-  .inner-page:not(:has(+ .breadcrumb)) {
+  .inner-page:not(:has(+ .breadcrumbs)) {
     margin-bottom: 2rem;
   }
 }
@@ -662,41 +662,54 @@ a {
   object-position: center;
 }
 
-.breadcrumb {
+.breadcrumbs {
   width: 100%;
   height: 4rem;
   background: #EAF0F2;
   margin-bottom: 7rem;
 }
 @media screen and (max-width: 992px) {
-  .breadcrumb {
+  .breadcrumbs {
     margin-bottom: 2rem;
   }
 }
-.breadcrumb__content {
+.breadcrumbs.can-to-scroll {
+  position: relative;
+}
+.breadcrumbs.can-to-scroll::before {
+  content: "";
+  position: absolute;
+  width: 7rem;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(234, 239, 242, 0) 8.73%, #EAEFF2 77.78%);
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
+.breadcrumbs__content {
   display: flex;
   align-items: center;
   height: 100%;
   white-space: nowrap;
   overflow-y: auto;
 }
-.breadcrumb__item {
+.breadcrumbs__item {
   display: flex;
   align-items: center;
 }
-.breadcrumb__item, .breadcrumb__item a, .breadcrumb__item p {
+.breadcrumbs__item, .breadcrumbs__item a, .breadcrumbs__item p {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: normal;
   color: #596775;
 }
-.breadcrumb__item a {
+.breadcrumbs__item a {
   transition: all 0.1s linear;
 }
-.breadcrumb__item a:hover {
+.breadcrumbs__item a:hover {
   color: #000;
 }
-.breadcrumb__item p {
+.breadcrumbs__item p {
   margin: 0;
 }
 
@@ -2910,6 +2923,35 @@ a {
 .product__information__item p span {
   font-weight: 600;
   color: #B32425;
+}
+.product__information__item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.product__information__item ul li {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: #3F3F3F;
+  display: flex;
+  gap: 0.5rem;
+}
+@media screen and (max-width: 992px) {
+  .product__information__item ul li {
+    line-height: normal;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .product__information__item ul li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.product__information__item ul li span {
+  color: #A6AFB7;
 }
 
 .payment {

@@ -31,6 +31,18 @@ $(document).ready(() => {
         }
     });
 
+    const breadcrumbsLastElement = $($('.breadcrumbs').children()[0]).children()[$($('.breadcrumbs').children()[0]).children().length - 1];
+    if (breadcrumbsLastElement) {
+        let isScroll = true;
+        breadcrumbsLastElement.scrollIntoView();
+        $($('.breadcrumbs').children()[0]).on('scroll', function () {
+            if (isScroll) {
+                $('.breadcrumbs').addClass('can-to-scroll');
+                isScroll = false;
+            }
+        });
+    }
+
     $('.header__burger-btn').on('click', () => {
         $('.burger').toggleClass('active');
         $('body').toggleClass('body-noscroll');
