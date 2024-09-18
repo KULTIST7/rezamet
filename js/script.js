@@ -64,7 +64,7 @@ $(document).ready(() => {
         $('.drop-down-equipment').slideDown('fast');
     });
 
-    $('.header').on('mouseleave', function () {
+    $('.drop-down').on('mouseleave', function () {
         $('.drop-down-products').slideUp('fast');
         $('.drop-down-equipment').slideUp('fast');
     });

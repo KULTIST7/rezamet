@@ -1,6 +1,6 @@
 $(document).ready(() => {
     const productMiniSlider = new Swiper('.product__mini-slider', {
-        slidesPerView: 2.07,
+        slidesPerView: 2.13,
         freeMode: true,
         watchSlidesProgress: true,
         breakpoints: {

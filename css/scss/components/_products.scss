@@ -250,6 +250,10 @@
                 color: #B32425;
                 margin-bottom: 0;
 
+                &.price-on-request {
+                    font-size: 1.4rem;
+                }
+
                 span {
                     color: rgba(89, 103, 117, 0.50);
                 }
