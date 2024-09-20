@@ -2748,6 +2748,11 @@ a {
   object-fit: cover;
   object-position: center;
   border-radius: 1rem;
+  transition: all 0.1s linear;
+  filter: grayscale(100%);
+}
+.product__mini-slider .swiper-slide-thumb-active img {
+  filter: none;
 }
 .product__description {
   display: flex;

@@ -119,6 +119,14 @@
                     object-fit: cover;
                     object-position: center;
                     border-radius: 1rem;
+                    transition: all .1s linear;
+                    filter: grayscale(100%);
+                }
+
+                &-thumb-active {
+                    img {
+                        filter: none;
+                    }
                 }
             }
         }

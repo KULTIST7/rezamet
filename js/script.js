@@ -31,7 +31,8 @@ $(document).ready(() => {
         }
     });
 
-    const breadcrumbsLastElement = $($('.breadcrumbs').children()[0]).children()[$($('.breadcrumbs').children()[0]).children().length - 1];
+    const breadcrumbsElements = $($('.breadcrumbs').children()[0]).children();
+    const breadcrumbsLastElement = breadcrumbsElements[breadcrumbsElements.length - 1];
     if (breadcrumbsLastElement) {
         let isScroll = true;
         breadcrumbsLastElement.scrollIntoView();
@@ -66,19 +67,54 @@ $(document).ready(() => {
         }
     });
 
+    let isDropDownMouseEnter = false;
+    let isProductsMouseEnter = false;
+    let isEquipmentMouseEnter = false;
+    
     $('.drop-down-products-hover').on('mouseenter', function () {
+        isProductsMouseEnter = true;
         $('.drop-down-equipment').slideUp('fast');
         $('.drop-down-products').slideDown('fast');
     });
 
+    $('.drop-down-products-hover').on('mouseleave', function () {
+        isProductsMouseEnter = false;
+        setTimeout(() => {
+            if (!isDropDownMouseEnter) {
+                $('.drop-down-products').slideUp('fast');
+                $('.drop-down-equipment').slideUp('fast');
+            }
+        }, 10);
+    });
+
     $('.drop-down-equipment-hover').on('mouseenter', function () {
+        isEquipmentMouseEnter = true;
         $('.drop-down-products').slideUp('fast');
         $('.drop-down-equipment').slideDown('fast');
     });
 
+    $('.drop-down-equipment-hover').on('mouseleave', function () {
+        isEquipmentMouseEnter = false;
+        setTimeout(() => {
+            if (!isDropDownMouseEnter) {
+                $('.drop-down-products').slideUp('fast');
+                $('.drop-down-equipment').slideUp('fast');
+            }
+        }, 10);
+    });
+
+    $('.drop-down').on('mouseenter', function () {
+        isDropDownMouseEnter = true;
+    });
+
     $('.drop-down').on('mouseleave', function () {
-        $('.drop-down-products').slideUp('fast');
-        $('.drop-down-equipment').slideUp('fast');
+        isDropDownMouseEnter = false;
+        setTimeout(() => {
+            if (!isProductsMouseEnter && !isEquipmentMouseEnter) {
+                $('.drop-down-products').slideUp('fast');
+                $('.drop-down-equipment').slideUp('fast');
+            }
+        }, 10);
     });
 
     $('.drop-down__list>li').on('mouseenter', function() {
